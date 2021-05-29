@@ -7,14 +7,16 @@
   </head>
   <body>
 
-    <div class="box">      
-    <h1 class="header">Recipe Finder:</h1>
+    <div class="box">
+    <h1 class="header">Recipe Finder</h1>
     </div>
 
 
         <div class="search">
-          <input type="text" name="" value="Search Recipes..." id="recipes">
+          <input type="text" name="" value="Search Recipes..." id="recipes" onClick="clearValue()">
           <button type="button" name="button" class="button"  onClick = "sendData()">Get Recipe!!</button>
+          <button type="button" name="button" class="button"  onClick = "sendData2()">See A Different Recipe</button>
+
         </div>
 
       <div id="root">
@@ -22,12 +24,12 @@
       </div>
 
     <div class="box">
-    <h1 class="header">Find Ingredients Near You:</h1>
+    <h1 class="header">Find Ingredients Near You</h1>
     </div>
 
     <div class="search">
-      <input type="text" value="Please enter your zipcode..." id="zipcode">
-      <input type="text" value="What item are you searching for?" id="item">
+      <input type="text" value="Please enter your zipcode..." id="zipcode" onClick="clearValue1()">
+      <input type="text" value="What item are you searching for?" id="item" onClick="clearValue2()">
       <button type="button" name="button" class="button" onClick="checkData()">Find this item in a store near you!!</button>
     </div>
 

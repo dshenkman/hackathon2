@@ -39,7 +39,7 @@ app.get('/getData', (req,res) => {
 })
 
 app.get('/data', (req,res) => {
-  db.select('store_name', 'item_name', 'price')
+  db.select('store_name', 'item_name', 'price', 'zipcode')
   .from('store')
   .join('price', 'price.store_id', '=', 'store.store_id')
   .join('items', 'items.item_id', '=', 'price.item_id')
