@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div class="box">      
+    <h1 class="header">Recipe Finder:</h1>
+    </div>
+
+
+        <div class="search">
+          <input type="text" name="" value="Search Recipes..." id="recipes">
+          <button type="button" name="button" class="button"  onClick = "sendData()">Get Recipe!!</button>
+        </div>
+
+      <div id="root">
+        <iframe src="" align="middle" width="" height="" id = "ifrm"></iframe>
+      </div>
+
+    <div class="box">
+    <h1 class="header">Find Ingredients Near You:</h1>
+    </div>
+
+    <div class="search">
+      <input type="text" value="Please enter your zipcode..." id="zipcode">
+      <input type="text" value="What item are you searching for?" id="item">
+      <button type="button" name="button" class="button" onClick="checkData()">Find this item in a store near you!!</button>
+    </div>
+
+
+    <header id="displayItem"></header>
+    <div id="root2"></div>
+
+
+
+
+
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
